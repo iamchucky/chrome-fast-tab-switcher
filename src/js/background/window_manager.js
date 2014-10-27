@@ -40,7 +40,7 @@ module.exports = function(chrome) {
         top: top,
         url: chrome.runtime.getURL('build/html/switcher.html'),
         focused: true,
-        type: 'popup'
+        type: 'panel'
       };
 
       return util.pcall(chrome.windows.create.bind(chrome.windows), opts)
